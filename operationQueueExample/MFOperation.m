@@ -69,12 +69,19 @@
 {
     
     
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+
     dispatch_async([self randomeQueue], ^{
+
         for (int i = 0; i < self.range; i++) {
             NSLog(@"%@",[NSString stringWithFormat:@"enemurat with range : %d %d",self.range,i]);
         }
         completion(YES);
+        dispatch_semaphore_signal(sema);
+
     });
+    
+    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
     
 
     

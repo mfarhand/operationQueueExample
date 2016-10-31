@@ -26,7 +26,7 @@
                   moduleName = "operationQueueExample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/MO/Desktop/operationQueueExample/operationQueueExample/ViewController.m"
-                  timestampString = "499607076.963337"
+                  timestampString = "499607563.820462"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -41,7 +41,7 @@
                   moduleName = "operationQueueExample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/MO/Desktop/operationQueueExample/operationQueueExample/ViewController.m"
-                  timestampString = "499607076.964722"
+                  timestampString = "499607563.821946"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -56,7 +56,7 @@
                   moduleName = "operationQueueExample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/MO/Desktop/operationQueueExample/operationQueueExample/ViewController.m"
-                  timestampString = "499607076.966249"
+                  timestampString = "499607563.823356"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -79,6 +79,22 @@
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "operationQueueExample/MFOperation.m"
+            timestampString = "499607498.214004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-doSomthingsWithCompletionBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
