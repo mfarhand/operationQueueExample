@@ -45,17 +45,47 @@
 }
 
 
+
+#pragma mark withOutProblem
+
+//-(void)doSomthingsWithCompletionBlock:(void(^)(BOOL result))completion
+//{
+//    
+//    
+//        for (int i = 0; i < self.range; i++) {
+//            NSLog(@"%@",[NSString stringWithFormat:@"enemurat with range : %d %d",self.range,i]);
+//        }
+//        completion(YES);
+//    
+//    
+//    
+//}
+
+
+
+
+#pragma mark withProblem
 -(void)doSomthingsWithCompletionBlock:(void(^)(BOOL result))completion
 {
     
+    
+    dispatch_async([self randomeQueue], ^{
         for (int i = 0; i < self.range; i++) {
             NSLog(@"%@",[NSString stringWithFormat:@"enemurat with range : %d %d",self.range,i]);
         }
         completion(YES);
+    });
+    
 
     
 }
 
+
+-(dispatch_queue_t)randomeQueue
+{
+    return dispatch_queue_create([[[NSUUID UUID]UUIDString]UTF8String], 0);
+    
+}
 
 
 
